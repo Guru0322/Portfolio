@@ -1,1 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Guru Naveen Varra — Full Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css">
+  <script src="portfolio.js" defer></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav">
+      <div class="nav-left">
+        <div class="logo-circle">N</div>
+        <div class="logo-text">
+          <h1>Guru Naveen Varra</h1>
+          <p>Full Stack Developer</p>
+        </div>
+      </div>
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="primary-navigation" class="nav-links">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
 
+  <!-- HERO -->
+  <section id="home" class="hero reveal">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="hero-tag">Full Stack Developer • MERN • Azure</p>
+        <h2 class="hero-title">
+          Building <span id="typed-text">modern web experiences</span>
+        </h2>
+        <p class="hero-sub">I build performant, user-friendly apps using React, Node.js, SQL, MongoDB & cloud technologies.</p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">View Projects</a>
+        </div>
+
+        <div class="hero-meta">
+          <span>4+ years experience</span>
+          <span>Full stack developer</span>
+        </div>
+      </div>
+
+      <aside class="hero-card reveal">
+        <div class="card-header">
+          <span class="dot live"></span>
+          <span>Available for opportunities</span>
+        </div>
+        <div class="profile-row">
+          <div class="avatar"></div>
+          <div>
+            <h3>Guru Naveen Varra</h3>
+            <p>Full Stack • AI Cloud Enthusiast</p>
+          </div>
+        </div>
+        <div class="stack-tags">
+          <span>React.js</span>
+          <span>Node.js</span>
+          <span>MongoDB</span>
+          <span>SQL</span>
+          <span>Azure</span>
+          <span>Python</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section reveal">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <p>I specialize in building clean, scalable, maintainable applications.</p>
+        <p>I worked with React, Node.js, Express, MongoDB, SQL Server, Azure Cloud.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section reveal">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">React.js</div>
+        <div class="skill-card">Node.js</div>
+        <div class="skill-card">Express</div>
+        <div class="skill-card">MongoDB</div>
+        <div class="skill-card">SQL</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section reveal">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-pill">Full Stack</div>
+          <h3>DriveWash.co – Vehicle Service</h3>
+          <p>Booking system with dashboards & authentication.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section reveal">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+
+      <form id="contact-form" name="contact" method="POST" data-netlify="true" class="contact-form">
+        <input type="hidden" name="form-name" value="contact" />
+
+        <div class="field">
+          <input id="name" name="name" type="text" placeholder="Your Name" required />
+          <small class="error-text" id="name-error"></small>
+        </div>
+
+        <div class="field">
+          <input id="email" name="email" type="email" placeholder="Your Email" required />
+          <small class="error-text" id="email-error"></small>
+        </div>
+
+        <div class="field">
+          <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+          <small class="error-text" id="message-error"></small>
+        </div>
+
+        <button type="submit" class="btn primary full">Send Message</button>
+        <p id="form-status" class="form-status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Naveen • Full Stack Developer</p>
+    </div>
+  </footer>
+</body>
+</html>
